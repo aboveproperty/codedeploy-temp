@@ -16,7 +16,7 @@
 #fi
 
 if [ -f /etc/sv/tomcat7/run ]; then
-    STOP_CMD="sv stop tomcat7"
+    STOP_CMD="sv kill tomcat7"
 else
     STOP_CMD="service tomcat7 stop"
 fi
